@@ -63,8 +63,9 @@
         }
 
         .project-btn {
-            margin: 10px;
-            min-width: 220px;
+            margin: 10px auto;
+            width: 300px;
+            display: block;
             padding: 12px 24px;
             font-weight: 500;
             border: none;
@@ -102,6 +103,12 @@
             background: linear-gradient(135deg, #6c757d, #545b62);
         }
 
+        .d-flex.flex-wrap.justify-content-center {
+            display: block !important;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
         @media (max-width: 768px) {
             .container {
                 margin-top: 1rem;
@@ -110,8 +117,8 @@
             }
 
             .project-btn {
-                min-width: 80%;
-                margin: 8px 4px;
+                width: 90%;
+                margin: 8px auto;
             }
 
             .section-title {
