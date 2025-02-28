@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>專案導覽頁面</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .page-title {
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 2rem;
+            position: relative;
+            padding-bottom: 1rem;
+        }
+
+        .page-title:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background: linear-gradient(90deg, #007bff, #00d2ff);
+            border-radius: 2px;
+        }
+
+        .section-title {
+            margin: 40px 0 25px 0;
+            padding-bottom: 15px;
+            color: #34495e;
+            font-weight: 600;
+            position: relative;
+        }
+
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, #007bff 0%, transparent 100%);
+        }
+
+        .project-btn {
+            margin: 10px;
+            min-width: 220px;
+            padding: 12px 24px;
+            font-weight: 500;
+            border: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #007bff, #0056b3);
+        }
+
+        .btn-info {
+            background: linear-gradient(135deg, #17a2b8, #117a8b);
+        }
+
+        .btn-success {
+            background: linear-gradient(135deg, #28a745, #1e7e34);
+        }
+
+        .btn-warning {
+            background: linear-gradient(135deg, #ffc107, #d39e00);
+            color: #000;
+        }
+
+        .btn-danger {
+            background: linear-gradient(135deg, #dc3545, #bd2130);
+        }
+
+        .btn-secondary {
+            background: linear-gradient(135deg, #6c757d, #545b62);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+                padding: 1rem;
+            }
+
+            .project-btn {
+                min-width: 80%;
+                margin: 8px 4px;
+            }
+
+            .section-title {
+                margin: 30px 0 20px 0;
+                font-size: 1.5rem;
+            }
+
+            .page-title {
+                font-size: 1.8rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .project-btn {
+                min-width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container py-5">
+        <h1 class="text-center page-title">專案導覽</h1>
+
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <h2 class="section-title">腦哥相關網站</h2>
+                <div class="d-flex flex-wrap justify-content-center">
+                    <a href="https://chainee0224.zeabur.app/test/index.php" class="btn btn-primary project-btn">
+                        腦哥官網
+                    </a>
+                    <a href="https://chainee.io/learning/login.php" class="btn btn-info project-btn">
+                        河流圖網站
+                    </a>
+                    <a href="https://chainee.io/courses/public-course" class="btn btn-success project-btn">
+                        公開講座報名
+                    </a>
+                    <a href="https://chainee.io/memes_courses/index.php" class="btn btn-warning project-btn">
+                        迷因幣課程網站
+                    </a>
+                    <a href="https://chainee.io/Cryptocurrency_Workshop/index.php" class="btn btn-primary project-btn">
+                        工作坊報名網站
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-12">
+                <h2 class="section-title">春酒活動相關</h2>
+                <div class="d-flex flex-wrap justify-content-center">
+                    <a href="https://chainee.io/spring_party/index.php" class="btn btn-danger project-btn">
+                        春酒報名網站
+                    </a>
+                    <a href="https://chainee.io/spring_party_game/index.php" class="btn btn-success project-btn">
+                        春酒活動網站（新）
+                    </a>
+                    <a href="https://chainee.io/spring_party_game/orig_index.php" class="btn btn-secondary project-btn">
+                        春酒活動網站（舊）
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-12">
+                <h2 class="section-title">其他專案</h2>
+                <div class="d-flex flex-wrap justify-content-center">
+
+                    <a href="https://www.thintoast.com.tw/login.php" class="btn btn-info project-btn">
+                        Tony 網站
+                    </a>
+                    <a href="https://shihjiajyun.github.io/headhunter/" class="btn btn-warning project-btn">
+                        獵頭網站模板
+                    </a>
+                    <a href="https://shinbwei.com/" class="btn btn-success project-btn">
+                        三個聖茭官網
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
